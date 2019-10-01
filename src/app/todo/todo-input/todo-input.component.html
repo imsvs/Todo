@@ -1,0 +1,5 @@
+
+    <mat-form-field class="todo-input">
+        <input (keyup.enter)="addTodo(item.value);item.value=''" matInput placeholder="Enter a work" #item>
+    </mat-form-field>   
+    <button mat-fab (click)="addTodo(item.value);item.value=''">Add</button>
